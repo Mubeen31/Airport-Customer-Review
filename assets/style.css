@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/*  styling scrollbars  */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3ea175;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-display {
+  display: flex;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.set_img{
+  position: absolute;
+  margin-top: -1%;
+}
+
+.text-primary-p {
+  white-space: nowrap;
+  margin-left: -35px;
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-primary-p1 {
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-primary-p2 {
+  color: #a5aaad;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+
+}
+
+.text-title {
+  color: #2e4a66;
+}
+
+.main {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.main_container {
+  padding: 20px 35px;
+}
+
+.main_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main_title > img {
+  max-height: 100px;
+  object-fit: contain;
+margin-top: -18px;
+margin-right: 5px;
+}
+
+.main_greeting > h1 {
+font-weight: 700;
+  font-size: 24px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+
+.main_greeting > p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+
+.create_container {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  display: flex;
+  height: 90px;
+  padding: 25px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.card_inner {
+  margin: 0px 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_inner > span {
+  font-size: 20px;
+}
+
+.card_inner > p {
+  font-size: 13px;
+}
+
+.charts_left {
+  height: 560px;
+  margin: 10px auto;
+  padding: 25px;
+  border-radius: 1rem;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+}
+
+.charts_left_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts_left_title > div > h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2e4a66;
+
+}
+
+.charts_left_title > div > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+
+.charts_left_title > i {
+  color: #ffffff;
+  font-size: 20px;
+  background: #ffc100;
+  border-radius: 200px 0px 200px 200px;
+  -moz-border-radius: 200px 0px 200px 200px;
+  -webkit-border-radius: 200px 0px 200px 200px;
+  border: 0px solid #000000;
+  padding: 15px;
+}
+
+.charts_right {
+  padding: 25px;
+  border-radius: 1rem;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.charts_right_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts_right_title > div > h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2e4a66;
+
+}
+
+.charts_right_title > div > p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+
+.charts_right_title > i {
+  color: #ffffff;
+  font-size: 20px;
+  background: #39447a;
+  border-radius: 200px 0px 200px 200px;
+  -moz-border-radius: 200px 0px 200px 200px;
+  -webkit-border-radius: 200px 0px 200px 200px;
+  border: 0px solid #000000;
+  padding: 15px;
+}
+
+.charts_right_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.card1 {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 1rem;
+  color: #35a4ba;
+  text-align: center;
+  padding: 25px;
+  height: 50px;
+}
+
+.card2 {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 1rem;
+  color: #38e1b0;
+  text-align: center;
+  padding: 25px;
+  height: 50px;
+  font-size: 14px;
+
+}
+
+.card3 {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 1rem;
+  color: #3a3e41;
+  text-align: center;
+  padding: 25px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.card4 {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  border-radius: 1rem;
+  color: #f65a6f;
+  text-align: center;
+  padding: 25px;
+  height: 50px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 978px) {
+  .set_img{
+  margin-top: -1%;
+
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .set_img{
+  margin-top: -1%;
+
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .set_img{
+  margin-top: -1%;
+
+  }
+}
+
+@media (max-width: 550px) {
+.flex-display {
+    display: block !important;
+  }
+
+  .create_container {
+    height: 110px;
+    width: 200px;
+    margin: 5px;
+    margin-left: 5px;
+
+}
+
+.charts_left {
+  height: 580px;
+}
+
+.card_inner > span {
+    margin-bottom: 8px;
+}
+
+.card_inner > p {
+    margin-bottom: 8px;
+}
+
+}
+
+
+
